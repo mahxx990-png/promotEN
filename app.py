@@ -29,7 +29,7 @@ Create a single, highly effective prompt that:
 Format the response as clean HTML with proper styling. Use <strong> for emphasis, <em> for important terms, and <br> for line breaks to make it readable. Return ONLY the formatted HTML prompt, nothing else. Make it the absolute best prompt possible for this task."""
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-1.5-flash",
             contents=conversion_prompt
         )
         result = response.text
